@@ -184,29 +184,3 @@ h1 {
     height: 100%;
     object-fit: cover;
 }
-.brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.brand img {
-    width: 60px !important;
-    height: 60px !important;
-    max-width: 60px !important;
-    max-height: 60px !important;
-    object-fit: contain;
-}
-
-.profile-photo {
-    width: 90px;
-    height: 90px;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.profile-photo img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover;
-}
