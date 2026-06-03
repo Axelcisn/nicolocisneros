@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cubo di Rubik - Nicolò</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="rubik-game-page">
+    <main class="rubik-game" aria-labelledby="rubik-title">
+      <header class="rubik-game__header">
+        <div>
+          <p class="eyebrow">Cubo di Rubik</p>
+          <h1 id="rubik-title">Risolvi il cubo</h1>
+        </div>
+        <a class="button button--ghost" href="/#passioni">Torna alle passioni</a>
+      </header>
+
+      <section class="rubik-game__stage" aria-label="Gioco Cubo di Rubik">
+        <div class="rubik-board">
+          <div class="rubik-stats" aria-live="polite">
+            <div>
+              <span>Tempo</span>
+              <strong id="timer">00:00</strong>
+            </div>
+            <div>
+              <span>Mosse</span>
+              <strong id="move-count">0</strong>
+            </div>
+            <div>
+              <span>Stato</span>
+              <strong id="game-status">Risolto</strong>
+            </div>
+          </div>
+
+          <div class="rubik-view">
+            <div class="game-cube" id="game-cube" aria-label="Vista 3D del cubo"></div>
+          </div>
+
+          <div class="face-net" id="face-net" aria-label="Rete del cubo"></div>
+        </div>
+
+        <aside class="rubik-controls" aria-label="Comandi del cubo">
+          <div class="control-group">
+            <h2>Partita</h2>
+            <div class="control-row">
+              <button class="game-button game-button--primary" id="scramble-button" type="button">Mischia</button>
+              <button class="game-button" id="reset-button" type="button">Reset</button>
+              <button class="game-button" id="undo-button" type="button">Annulla</button>
+            </div>
+            <div class="control-row control-row--actions">
+              <button class="game-button game-button--accent" id="sexy-button" type="button">Sexy move</button>
+              <button class="game-button" id="patterns-button" type="button">Patterns</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <h2>Mosse</h2>
+            <div class="move-grid" id="move-grid"></div>
+          </div>
+
+          <div class="control-group">
+            <h2>Vista</h2>
+            <div class="control-row">
+              <button class="game-button" data-view="left" type="button">Sinistra</button>
+              <button class="game-button" data-view="front" type="button">Centro</button>
+              <button class="game-button" data-view="right" type="button">Destra</button>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="patterns-panel" id="patterns-panel" aria-labelledby="patterns-title" hidden>
+        <div class="patterns-panel__content">
+          <header class="patterns-panel__header">
+            <div>
+              <p class="eyebrow">Algoritmi</p>
+              <h2 id="patterns-title">Patterns</h2>
+            </div>
+            <button class="patterns-panel__close" id="patterns-close" type="button" aria-label="Chiudi patterns">Chiudi</button>
+          </header>
+          <div class="patterns-list" id="patterns-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/rubik.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Logo tecnologico</title>
+  <defs>
+    <radialGradient id="bg" cx="44%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#2fc9ff"/>
+      <stop offset="0.42" stop-color="#145ea8"/>
+      <stop offset="0.78" stop-color="#26235f"/>
+      <stop offset="1" stop-color="#080b18"/>
+    </radialGradient>
+    <linearGradient id="logo" x1="86" y1="116" x2="426" y2="402" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b7fbff"/>
+      <stop offset="0.38" stop-color="#35bbff"/>
+      <stop offset="0.68" stop-color="#6d86ff"/>
+      <stop offset="1" stop-color="#c55cff"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" values="0 0 0 0 0.24 0 0 0 0 0.68 0 0 0 0 1 0 0 0 0.9 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="256" cy="256" r="250" fill="#151719"/>
+  <circle cx="256" cy="256" r="232" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="218" fill="none" stroke="rgba(255,255,255,0.38)" stroke-width="8"/>
+  <path fill="none" stroke="url(#logo)" stroke-width="46" stroke-linejoin="round" stroke-linecap="round" filter="url(#glow)"
+        d="M162 104h72c95 0 170 64 170 152s-75 152-170 152h-72V302h38v62h38c69 0 122-45 122-108S307 148 238 148h-38v62h-38z"/>
+  <g fill="none" stroke="url(#logo)" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <path d="M76 218h100l78-78"/>
+    <path d="M74 262h142l112-112"/>
+    <path d="M88 315h138l128-128"/>
+    <path d="M198 400V286l70-70"/>
+    <path d="M248 400V304l92-92"/>
+    <path d="M296 398v-66l65-65h54"/>
+  </g>
+  <g fill="url(#logo)" stroke="#d7fbff" stroke-width="4" filter="url(#glow)">
+    <circle cx="76" cy="218" r="17"/>
+    <circle cx="74" cy="262" r="17"/>
+    <circle cx="88" cy="315" r="17"/>
+    <circle cx="254" cy="140" r="17"/>
+    <circle cx="328" cy="150" r="17"/>
+    <circle cx="415" cy="187" r="17"/>
+    <circle cx="415" cy="267" r="17"/>
+    <circle cx="361" cy="332" r="17"/>
+  </g>
+</svg>

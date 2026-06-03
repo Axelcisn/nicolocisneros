@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DrewGPT, una pagina chat di intelligenza artificiale per il sito personale di Nicolò.">
+    <title>DrewGPT</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="drew-page">
+    <main class="drew-shell" aria-labelledby="drew-title">
+      <header class="drew-topbar">
+        <a class="drew-logo" href="/" aria-label="Torna al sito">
+          <img src="/tech-logo.svg" alt="">
+        </a>
+        <div>
+          <p class="eyebrow">Intelligenza artificiale</p>
+          <h1 id="drew-title">DrewGPT</h1>
+        </div>
+        <a class="drew-back" href="/">Torna al sito</a>
+      </header>
+
+      <section class="drew-chat" aria-label="Chat DrewGPT">
+        <div class="drew-messages" id="drewMessages" aria-live="polite">
+          <article class="drew-message drew-message--bot">
+            <span>D</span>
+            <p>Ciao, sono DrewGPT. Cerco sul web, confronto piu fonti e poi ti rispondo in modo completo. Posso aiutarti con calcio, idee, scuola, codice, giochi e progetti creativi.</p>
+          </article>
+        </div>
+
+        <div class="drew-suggestions" aria-label="Suggerimenti">
+          <button type="button" data-prompt="Dammi tre idee per migliorare il mio sito">Idee sito</button>
+          <button type="button" data-prompt="Spiegami un concetto di informatica con un esempio">Informatica</button>
+          <button type="button" data-prompt="Aiutami a creare un mini progetto">Mini progetto</button>
+          <button type="button" data-prompt="Chi ha vinto il Mondiale di calcio del 2006?">Calcio</button>
+          <button type="button" data-prompt="Crea una strategia per migliorare a scacchi">Scacchi</button>
+          <button type="button" data-prompt="Come posso allenarmi con il cubo di Rubik?">Rubik</button>
+        </div>
+
+        <form class="drew-composer" id="drewForm">
+          <label class="visually-hidden" for="drewInput">Messaggio</label>
+          <textarea id="drewInput" rows="1" placeholder="Scrivi a DrewGPT..." required></textarea>
+          <button class="drew-stop" id="drewStop" type="button" hidden>Stop</button>
+          <button id="drewSend" type="submit">Invia</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/drewgpt.js"></script>
+  </body>
+</html>
