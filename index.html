@@ -3,43 +3,297 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nicolo Cisneros</title>
+    <meta name="description" content="Presentazione personale di Nicolò: scuola, passioni, sport, tecnologia e obiettivi.">
+    <title>Presentazione personale - Nicolò</title>
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
-    <main class="page">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero__image" aria-hidden="true">
-          <div class="signal signal--one"></div>
-          <div class="signal signal--two"></div>
-          <div class="signal signal--three"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="/drewgpt.html" aria-label="Apri DrewGPT">
+        <img src="/tech-logo.svg" alt="">
+      </a>
+
+      <nav class="dynamic-island" aria-label="Navigazione principale">
+        <a href="#chi-sono">Chi sono</a>
+        <a href="#passioni">Passioni</a>
+        <a href="#obiettivi">Obiettivi</a>
+      </nav>
+
+      <div class="profile-photo" aria-label="Foto profilo di Nicolò">
+        <img src="/cisne.jpg" alt="Foto profilo di Nicolò">
+        <span aria-hidden="true">NC</span>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero cinematic" aria-labelledby="hero-title">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Presentazione personale</p>
+          <h1 id="hero-title">Ciao, sono Nicolò</h1>
+          <p class="hero__text">Sport, videogiochi, tecnologia e creatività: una pagina per raccontare chi sono, cosa mi piace e dove voglio arrivare.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#chi-sono">Scopri di più</a>
+            <a class="button button--ghost" href="#passioni">Le mie passioni</a>
+          </div>
         </div>
 
-        <div class="hero__content">
-          <p class="eyebrow">Localhost attivo</p>
-          <h1 id="hero-title">Nicolo Cisneros</h1>
-          <p class="lede">Il progetto e' collegato a GitHub ed e' pronto per partire in locale sulla porta 3000.</p>
-          <a class="button" href="https://github.com/Axelcisn/nicolocisneros">Apri GitHub</a>
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="hero__portrait" data-parallax>
+            <span>Nicolò</span>
+            <div class="orbit orbit--water">
+              <div class="orbital-card">Pallanuoto</div>
+            </div>
+            <div class="orbit orbit--code">
+              <div class="orbital-card">Informatica</div>
+            </div>
+            <div class="orbit orbit--game">
+              <div class="orbital-card">Brawl Stars</div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="status" aria-label="Stato del progetto">
-        <article>
-          <span>01</span>
-          <h2>Repository collegato</h2>
-          <p>Remote impostato su Axelcisn/nicolocisneros.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h2>Server locale</h2>
-          <p>Avvio con il comando npm run dev.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h2>Porta 3000</h2>
-          <p>Il sito risponde su http://localhost:3000.</p>
-        </article>
+      <section class="apple-showcase" aria-labelledby="showcase-title">
+        <div class="showcase-copy reveal">
+          <p class="eyebrow">Esperienza</p>
+          <h2 id="showcase-title">Tutto in una pagina</h2>
+          <p>Sezioni pulite, animazioni morbide e contenuti immediati: il sito racconta Nicolò senza riempire lo schermo di testo inutile.</p>
+        </div>
+
+        <div class="showcase-device reveal" data-parallax aria-hidden="true">
+          <div class="device-screen">
+            <div class="device-row">
+              <span>Sport</span>
+              <strong>Pallanuoto</strong>
+            </div>
+            <div class="device-row">
+              <span>Materia</span>
+              <strong>Informatica</strong>
+            </div>
+            <div class="device-row">
+              <span>Gioco</span>
+              <strong>Cubo 3D</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="chi-sono" aria-labelledby="about-title">
+        <div class="section__heading">
+          <p class="eyebrow">Identità</p>
+          <h2 id="about-title">Chi sono</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="info-card reveal">
+            <span class="card-icon" aria-hidden="true">01</span>
+            <h3>Mi presento</h3>
+            <p>Mi chiamo Nicolò e abito ad Arese, una città che mi piace molto.</p>
+          </article>
+
+          <article class="info-card reveal">
+            <span class="card-icon" aria-hidden="true">02</span>
+            <h3>Scuola</h3>
+            <p>Frequento il Liceo Russell di Garbagnate Milanese.</p>
+          </article>
+
+          <article class="info-card reveal">
+            <span class="card-icon" aria-hidden="true">03</span>
+            <h3>Informatica</h3>
+            <p>È la mia materia preferita, perché mi permette di creare cose con il computer.</p>
+          </article>
+        </div>
+
+        <div class="school-gallery reveal" aria-label="Foto del Liceo Russell">
+          <div class="school-gallery__copy">
+            <p class="eyebrow">Liceo Russell</p>
+            <h3>La mia scuola</h3>
+            <p>Due immagini grandi e pulite per raccontare il luogo dove studio ogni giorno.</p>
+          </div>
+
+          <div class="school-photos">
+            <figure class="school-photo school-photo--large">
+              <img src="/liceo-russell-1.jpg" alt="Ingresso del Liceo Scientifico B. Russell">
+              <figcaption>Ingresso principale</figcaption>
+            </figure>
+            <figure class="school-photo school-photo--small">
+              <img src="/liceo-russell-2.jpg" alt="Facciata del Liceo Scientifico B. Russell">
+              <figcaption>Facciata del liceo</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark reveal" id="passioni" aria-labelledby="passions-title">
+        <div class="section__heading">
+          <p class="eyebrow">Interessi</p>
+          <h2 id="passions-title">Le mie passioni</h2>
+        </div>
+
+        <div class="card-grid card-grid--wide">
+          <article class="info-card reveal">
+            <span class="card-icon" aria-hidden="true">A</span>
+            <h3>Pallanuoto</h3>
+            <p>Il mio sport preferito è la pallanuoto, ma mi piacciono molto anche gli altri sport.</p>
+          </article>
+
+          <article class="info-card reveal">
+            <span class="card-icon" aria-hidden="true">B</span>
+            <h3>Videogiochi</h3>
+            <p>Mi piace giocare ai videogiochi, soprattutto a Brawl Stars.</p>
+          </article>
+
+          <article class="info-card reveal">
+            <span class="card-icon" aria-hidden="true">C</span>
+            <h3>Scacchi</h3>
+            <p>Mi piace giocare a scacchi perché è un gioco di strategia e ragionamento.</p>
+            <a class="inline-link" href="/chess.html" target="_blank" rel="noreferrer" data-chess-link>Apri scacchiera</a>
+          </article>
+
+          <article class="info-card info-card--highlight reveal">
+            <span class="card-icon" aria-hidden="true">D</span>
+            <h3>Cubo di Rubik</h3>
+            <p>Mi piace risolvere il Cubo di Rubik e allenare la mente con logica e memoria.</p>
+            <a class="inline-link" href="/rubik.html" target="_blank" rel="noreferrer" data-rubik-link>Apri Cubo 3D</a>
+          </article>
+
+          <article class="info-card reveal">
+            <span class="card-icon" aria-hidden="true">E</span>
+            <h3>Sushi</h3>
+            <p>Il mio cibo preferito è il sushi.</p>
+          </article>
+        </div>
+
+      </section>
+
+      <section class="section reveal" id="obiettivi" aria-labelledby="goals-title">
+        <div class="section__heading">
+          <p class="eyebrow">Futuro</p>
+          <h2 id="goals-title">I miei obiettivi</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="reveal">
+            <span>01</span>
+            <h3>Crescere</h3>
+            <p>Voglio migliorare sempre di più nelle mie passioni.</p>
+          </article>
+
+          <article class="reveal">
+            <span>02</span>
+            <h3>Imparare</h3>
+            <p>Voglio continuare a imparare cose nuove, soprattutto nel mondo dell'informatica.</p>
+          </article>
+
+          <article class="reveal">
+            <span>03</span>
+            <h3>Creare</h3>
+            <p>Vorrei diventare sempre più bravo a realizzare progetti originali e utili.</p>
+          </article>
+        </div>
       </section>
     </main>
+
+    <footer class="finale">
+      <p class="eyebrow">Creato da Nicolò</p>
+      <h2>Il prossimo progetto inizia da qui</h2>
+      <p>Una pagina personale fatta con HTML, CSS e un po' di JavaScript.</p>
+    </footer>
+
+    <script>
+      const profileImage = document.querySelector(".profile-photo img");
+      const profileFallback = document.querySelector(".profile-photo span");
+      const navLinks = document.querySelectorAll(".dynamic-island a");
+      const chessLink = document.querySelector("[data-chess-link]");
+      const rubikLink = document.querySelector("[data-rubik-link]");
+      const progress = document.querySelector(".scroll-progress");
+      const revealItems = document.querySelectorAll(".reveal");
+      const parallaxItems = document.querySelectorAll("[data-parallax]");
+      const schoolImages = document.querySelectorAll(".school-photo img");
+      const sections = [...navLinks].map((link) => document.querySelector(link.getAttribute("href")));
+
+      profileImage.addEventListener("error", () => {
+        profileImage.hidden = true;
+        profileFallback.hidden = false;
+      });
+
+      profileFallback.hidden = true;
+
+      schoolImages.forEach((image) => {
+        image.addEventListener("error", () => {
+          image.closest(".school-photo").classList.add("school-photo--missing");
+          image.hidden = true;
+        });
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          navLinks.forEach((link) => {
+            const isActive = link.getAttribute("href") === `#${entry.target.id}`;
+            link.toggleAttribute("aria-current", isActive);
+          });
+        });
+      }, { rootMargin: "-42% 0px -48% 0px" });
+
+      sections.forEach((section) => {
+        if (section) observer.observe(section);
+      });
+
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle("is-visible", entry.isIntersecting);
+        });
+      }, { threshold: 0.18 });
+
+      revealItems.forEach((item, index) => {
+        item.style.setProperty("--reveal-delay", `${Math.min(index * 42, 260)}ms`);
+        revealObserver.observe(item);
+      });
+
+      window.addEventListener("scroll", () => {
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        const progressValue = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+        progress.style.transform = `scaleX(${progressValue})`;
+      }, { passive: true });
+
+      window.addEventListener("pointermove", (event) => {
+        const x = (event.clientX / window.innerWidth - 0.5) * 2;
+        const y = (event.clientY / window.innerHeight - 0.5) * 2;
+
+        parallaxItems.forEach((item) => {
+          item.style.setProperty("--tilt-x", `${-y * 5}deg`);
+          item.style.setProperty("--tilt-y", `${x * 6}deg`);
+        });
+      }, { passive: true });
+
+      chessLink.addEventListener("click", (event) => {
+        event.preventDefault();
+        const gameWindow = window.open(chessLink.href, "chessGameWindow", "width=1440,height=920");
+
+        if (!gameWindow) {
+          window.location.href = chessLink.href;
+          return;
+        }
+
+        gameWindow.focus();
+      });
+
+      rubikLink.addEventListener("click", (event) => {
+        event.preventDefault();
+        const gameWindow = window.open(rubikLink.href, "rubikGameWindow", "width=1280,height=900");
+
+        if (!gameWindow) {
+          window.location.href = rubikLink.href;
+          return;
+        }
+
+        gameWindow.focus();
+      });
+
+    </script>
   </body>
 </html>
